@@ -42,7 +42,6 @@ function Hero() {
 					/>
 				</p>
 
-				{/* <div className='max-w-2xl bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg mt-6 text-center'> */}
 					<a
 						href='/Resume.pdf'
 						download
@@ -50,7 +49,6 @@ function Hero() {
 					>
 						Download CV
 					</a>
-				{/* </div> */}
 			</div>
 		</section>
 	)

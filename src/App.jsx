@@ -10,7 +10,7 @@ function App() {
 			<Header />
 			<main
 				style={{
-					backgroundImage: "url('/nout.avif')",
+					backgroundImage: "url('/nout.jpg')",
           backgroundRepeat: 'no-repeat',
 					backgroundSize: 'cover',
           width: '100%',
