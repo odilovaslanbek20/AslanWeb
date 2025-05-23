@@ -10,22 +10,22 @@ function Header() {
       <header className='fixed top-0 z-50 w-full bg-gray-900/80 backdrop-blur-md border-b border-white/10'>
         <div className='max-w-[90%] mx-auto px-4 py-3 flex items-center justify-between'>
           <Link to='/' className='flex items-center gap-2'>
-            <div className='w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center font-bold text-white text-lg shadow-md'>
+            <div className='w-10 h-10 rounded-full dark:bg-emerald-400 flex items-center justify-center font-bold text-white text-lg shadow-md'>
               OA
             </div>
             <h1 className='text-white font-bold text-lg'>Odilov Aslanbek</h1>
           </Link>
 
           <nav className='hidden md:flex gap-10'>
-            <Link to='/' className='group text-white font-medium relative'>
+            <Link to='/' className='group text-gray-300 font-medium relative'>
               <span>About me</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
-            <Link to='#' className='group text-white font-medium relative'>
+            <Link to='#' className='group text-gray-300 font-medium relative'>
               <span>Portfolio</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
-            <Link to='#' className='group text-white font-medium relative'>
+            <Link to='#' className='group text-gray-300 font-medium relative'>
               <span>Contact me</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
