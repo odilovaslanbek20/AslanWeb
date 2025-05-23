@@ -3,28 +3,32 @@ import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/Home/Home'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import AboutPage from './pages/About/About'
 
 function App() {
 	return (
-		<>
+		<div className="flex flex-col h-screen">
 			<Header />
+
 			<main
+				className="flex-1 overflow-y-auto"
 				style={{
 					backgroundImage: "url('/nout.jpg')",
-          backgroundRepeat: 'no-repeat',
+					backgroundRepeat: 'no-repeat',
 					backgroundSize: 'cover',
-          width: '100%',
-          height: '100vh'
+					backgroundPosition: 'center',
 				}}
 			>
-				<div className='px-4 sm:px-6 md:px-8 max-w-[1280px] mx-auto pt-[80px] pb-[40px] min-h-[calc(100vh-110px)] max-[768px]:min-h-[calc(100vh-140px)]'>
+				<div className='px-4 sm:px-6 md:px-8 max-w-[1280px] mx-auto pt-[80px] pb-[40px] min-h-full'>
 					<Routes>
 						<Route path='/' element={<HomePage />} />
+						<Route path='/about' element={<AboutPage />} />
 					</Routes>
 				</div>
 			</main>
+
 			<Footer />
-		</>
+		</div>
 	)
 }
 

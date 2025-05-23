@@ -17,7 +17,7 @@ function Header() {
           </Link>
 
           <nav className='hidden md:flex gap-10'>
-            <Link to='/' className='group text-gray-300 font-medium relative'>
+            <Link to='/about' className='group text-gray-300 font-medium relative'>
               <span>About me</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
@@ -31,7 +31,6 @@ function Header() {
             </Link>
           </nav>
 
-          {/* Mobile Button */}
           <FaBarsStaggered
             onClick={() => setModal(true)}
             className='text-white text-2xl md:hidden'
@@ -39,7 +38,6 @@ function Header() {
         </div>
       </header>
 
-      {/* Overlay */}
       {modal && (
         <div
           onClick={() => setModal(false)}
@@ -47,7 +45,6 @@ function Header() {
         />
       )}
 
-      {/* Mobile Modal */}
       <div
         style={{ backgroundColor: 'rgba(30, 30, 30, 0.95)' }}
         className={`fixed top-0 right-0 h-full w-[280px] text-white flex flex-col gap-6 pt-16 px-6 transition-transform duration-300 z-50 md:hidden ${
@@ -59,7 +56,7 @@ function Header() {
           className='absolute top-4 left-4 text-3xl cursor-pointer'
         />
         <Link
-          to='/'
+          to='/about'
           onClick={() => setModal(false)}
           className='text-lg font-medium'
         >
