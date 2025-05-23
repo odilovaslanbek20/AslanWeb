@@ -1,42 +1,59 @@
-export default function Hero() {
-  return (
-    <section className="w-full max-w-4xl mx-auto px-6 max-[400px]:px-0 sm:px-8 md:px-12 lg:px-16 py-20 flex flex-col items-center md:items-start text-center md:text-left space-y-10">
-      <div className="space-y-6 max-w-xl">
-        <h2 className="text-teal-500 font-semibold uppercase tracking-widest text-sm sm:text-base md:text-lg">
-          Hello & Welcome
-        </h2>
+import { Typewriter } from 'react-simple-typewriter'
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 dark:text-gray-100 leading-snug">
-          I'm <span className="text-emerald-600 dark:text-emerald-400">Aslanbek</span>
-        </h1>
+function Hero() {
+	return (
+		<section
+			className='w-full bg-cover bg-center flex items-center justify-center'
+			style={{ backgroundImage: "url('/bg.jpg')" }}
+		>
+			<div className='absolute inset-0 bg-black/60 z-0 w-full h-full' />
 
-        <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl">
-          Passionate Frontend Developer building sleek, fast, and accessible websites.
-          Expert in React, Next.js, and Tailwind CSS for modern web solutions.
-        </p>
+			<div className='relative z-10 container mx-auto px-6 max-[500px]:px-0 py-16 flex flex-col items-center justify-center text-center gap-6'>
+				<img
+					src='/Me.jpg'
+					alt='My Photo'
+					className='rounded-full w-40 h-40 object-cover border-4 border-cyan-400 shadow-lg mb-6'
+				/>
 
-        <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 sm:gap-8 mt-6">
-          <a
-            href="#portfolio"
-            className="px-8 py-3 bg-emerald-600 text-white rounded-lg font-semibold
-              hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-4
-              focus:ring-emerald-300 dark:focus:ring-emerald-500 text-center"
-          >
-            See My Work
-          </a>
+				<h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight'>
+					Hi, I am <br />
+					<span className='text-cyan-400'>
+						<Typewriter
+							words={['Odilov Aslanbek']}
+							loop={1}
+							cursor
+							cursorStyle='|'
+							typeSpeed={100}
+							deleteSpeed={50}
+							delaySpeed={1000}
+						/>
+					</span>
+				</h1>
 
-          <a
-            href="#contact"
-            className="px-8 py-3 border-2 border-emerald-600 text-emerald-600 rounded-lg font-semibold
-              hover:bg-emerald-600 hover:text-white transition-colors focus:outline-none focus:ring-4
-              focus:ring-emerald-300 dark:border-emerald-400 dark:text-emerald-400
-              dark:hover:bg-emerald-400 dark:hover:text-gray-900 dark:focus:ring-emerald-500 text-center"
-          >
-            Get in Touch
-          </a>
-        </div>
-      </div>
-      
-    </section>
-  )
+				<p className='text-lg sm:text-xl text-gray-300 font-medium'>
+					<Typewriter
+						words={['Frontend Developer']}
+						loop={1}
+						cursor
+						cursorStyle='_'
+						typeSpeed={80}
+						deleteSpeed={50}
+						delaySpeed={1500}
+					/>
+				</p>
+
+				{/* <div className='max-w-2xl bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg mt-6 text-center'> */}
+					<a
+						href='/Resume.pdf'
+						download
+						className='inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 cursor-pointer'
+					>
+						Download CV
+					</a>
+				{/* </div> */}
+			</div>
+		</section>
+	)
 }
+
+export default Hero

@@ -1,29 +1,28 @@
-// components/Footer/Footer.tsx
 import { FaInstagram, FaGithub, FaTelegram } from 'react-icons/fa'
 
 const Footer = () => {
 	return (
-		<footer className="bg-gray-900 text-white py-6">
-			<div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-				<div className="mb-4 md:mb-0 text-center md:text-left">
+		<footer className="w-full mt-auto px-4 fixed bottom-[15px]">
+			<div className="bg-gray-900 text-white py-6 rounded-[30px] shadow-lg max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 transition-all duration-300">
+				<div className="text-center md:text-left">
 					<p className="text-lg font-semibold">© 2025 Aslanbek Portfolio</p>
 					<p className="text-sm text-gray-400">Frontend Developer</p>
 				</div>
 
-				<div className="flex space-x-4">
+				<div className="flex space-x-6">
 					<a
 						href="https://github.com/odilovaslanbek20"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="hover:text-orange-400 transition"
+						className="hover:text-orange-400 transition duration-200"
 					>
 						<FaGithub size={24} />
 					</a>
 					<a
-						href="https://t.me/@aslanbek_odilov" 
+						href="https://t.me/aslanbek_odilov"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="hover:text-orange-400 transition"
+						className="hover:text-orange-400 transition duration-200"
 					>
 						<FaTelegram size={24} />
 					</a>
@@ -31,7 +30,7 @@ const Footer = () => {
 						href="https://www.instagram.com/aslanbek8987"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="hover:text-orange-400 transition"
+						className="hover:text-orange-400 transition duration-200"
 					>
 						<FaInstagram size={24} />
 					</a>
@@ -41,4 +40,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default Footer;
