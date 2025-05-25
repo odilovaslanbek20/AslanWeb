@@ -1,6 +1,6 @@
 import Portfolio from '../../components/Portfolio/PortfolioFile'
 
-function PortfolioPage() {
+function PartfolioPage() {
 	return (
 		<>
 			<Portfolio />
@@ -8,4 +8,4 @@ function PortfolioPage() {
 	)
 }
 
-export default PortfolioPage
+export default PartfolioPage

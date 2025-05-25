@@ -5,42 +5,42 @@ const projects = [
 	{
 		title: 'Books Shop',
 		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+			'A modern and responsive book store page. Minimalistic design and user-friendly interface.',
 		link: 'https://book-shop-ia12.vercel.app/#',
 		image: 'booksshop.png',
 	},
 	{
 		title: 'Eco Bozor',
 		description:
-			'Bolalar klinikasi uchun landing sahifa. Light/Dark rejim, responsive dizayn.',
+			'A market page for eco-friendly products. Light/Dark mode with mobile-friendly layout.',
 		link: 'https://eco-bozor-web.vercel.app',
 		image: 'ecobozor.png',
 	},
 	{
 		title: 'Green Shop',
 		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+			'An online store based on green-themed colors. Showcases eco products and services.',
 		link: 'https://7-oy-imthon.vercel.app/',
 		image: 'greenshop.png',
 	},
 	{
-		title: 'Books magazin',
+		title: 'Books Magazin',
 		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+			'A dedicated web page for books. Clean design and intuitive navigation.',
 		link: 'https://books-magazin.vercel.app/',
 		image: 'bookshop.png',
 	},
 	{
 		title: 'To Do List',
 		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+			'A task management app. Helps plan and manage daily tasks with a simple interface.',
 		link: 'https://to-do-list-seven-alpha-39.vercel.app/',
 		image: 'to-do-list.png',
 	},
 	{
-		title: 'Crud App',
+		title: 'CRUD App',
 		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+			'A full-featured CRUD application to Create, Read, Update, and Delete data.',
 		link: 'https://crud-app-two-vert.vercel.app/',
 		image: 'crud.png',
 	},
