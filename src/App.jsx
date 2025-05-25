@@ -4,8 +4,8 @@ import HomePage from './pages/Home/Home'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import AboutPage from './pages/About/About'
-import PortfolioPage from './pages/portfolio/Portfolio'
 import ContactPage from './pages/Contact/Contact'
+import PortfolioPage from './pages/portfolio/Portfolio'
 
 function App() {
 	return (
