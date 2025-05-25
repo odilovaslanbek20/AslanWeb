@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { FaBarsStaggered, FaXmark } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Header() {
   const [modal, setModal] = useState(false)
+  const location = useLocation()
+  const current = location.pathname
 
   return (
     <>
@@ -17,18 +19,15 @@ function Header() {
           </Link>
 
           <nav className='hidden md:flex gap-10'>
-            <Link tabIndex={0}  to='/about' className='group text-gray-300 font-medium relative'>
-              <span>About me</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full  transition-all'></span>
-            </Link>
-            <Link tabIndex={0}  to='/portfolio' className='group text-gray-300 font-medium relative'>
-              <span>Portfolio</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full  transition-all'></span>
-            </Link>
-            <Link tabIndex={0} to='/contact' className='group text-gray-300 font-medium relative'>
-              <span>Contact me</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full transition-all'></span>
-            </Link>
+            <HeaderLink to='/about' current={current}>
+              About me
+            </HeaderLink>
+            <HeaderLink to='/portfolio' current={current}>
+              Portfolio
+            </HeaderLink>
+            <HeaderLink to='/contact' current={current}>
+              Contact me
+            </HeaderLink>
           </nav>
 
           <FaBarsStaggered
@@ -58,26 +57,50 @@ function Header() {
         <Link
           to='/about'
           onClick={() => setModal(false)}
-          className='text-lg font-medium'
+          className={`text-lg font-medium ${
+            current === '/about' ? 'text-emerald-400' : ''
+          }`}
         >
           About me
         </Link>
         <Link
           to='/portfolio'
           onClick={() => setModal(false)}
-          className='text-lg font-medium'
+          className={`text-lg font-medium ${
+            current === '/portfolio' ? 'text-emerald-400' : ''
+          }`}
         >
           Portfolio
         </Link>
         <Link
           to='/contact'
           onClick={() => setModal(false)}
-          className='text-lg font-medium'
+          className={`text-lg font-medium ${
+            current === '/contact' ? 'text-emerald-400' : ''
+          }`}
         >
           Contact me
         </Link>
       </div>
     </>
+  )
+}
+
+function HeaderLink({ to, children, current }) {
+  const isActive = current === to
+
+  return (
+    <Link
+      to={to}
+      className='group text-gray-300 font-medium relative'
+    >
+      <span className={isActive ? 'text-white' : ''}>{children}</span>
+      <span
+        className={`absolute left-0 bottom-[-2px] h-[2px] bg-white transition-all duration-300 ${
+          isActive ? 'w-full' : 'w-0 group-hover:w-full group-focus-visible:w-full'
+        }`}
+      ></span>
+    </Link>
   )
 }
 
