@@ -3,52 +3,52 @@ import { GoHeart } from 'react-icons/go'
 
 const projects = [
 	{
-		title: 'Kids Doktor',
+		title: 'Books Shop',
+		description:
+			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+		link: 'https://book-shop-ia12.vercel.app/#',
+		image: 'booksshop.png',
+	},
+	{
+		title: 'Eco Bozor',
 		description:
 			'Bolalar klinikasi uchun landing sahifa. Light/Dark rejim, responsive dizayn.',
-		link: 'https://kidsdoktor.example.com',
+		link: 'https://eco-bozor-web.vercel.app',
 		image: 'eco-bozor.png',
 	},
 	{
-		title: 'Huarong Avto',
+		title: 'Green Shop',
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
-		link: 'https://huarongavto.example.com',
+		link: 'https://7-oy-imthon.vercel.app/',
+		image: 'public/green-shop.png',
+	},
+	{
+		title: 'Books magazin',
+		description:
+			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
+		link: 'https://books-magazin.vercel.app/',
 		image: 'book-shop.png',
 	},
 	{
-		title: 'Huarong Avto',
+		title: 'To Do List',
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
-		link: 'https://huarongavto.example.com',
-		image: 'book-shop.png',
+		link: 'https://to-do-list-seven-alpha-39.vercel.app/',
+		image: 'to-do-list.png',
 	},
 	{
-		title: 'Huarong Avto',
+		title: 'Crud App',
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
-		link: 'https://huarongavto.example.com',
-		image: 'book-shop.png',
-	},
-	{
-		title: 'Huarong Avto',
-		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
-		link: 'https://huarongavto.example.com',
-		image: 'book-shop.png',
-	},
-	{
-		title: 'Huarong Avto',
-		description:
-			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
-		link: 'https://huarongavto.example.com',
-		image: 'book-shop.png',
+		link: 'https://crud-app-two-vert.vercel.app/',
+		image: 'crud.png',
 	},
 ]
 
 function Portfolio() {
 	return (
-		<section className='max-w-[90%] m-auto py-10'>
+		<section className='max-w-[90%] m-auto py-10 pb-[100px] max-[768px]:pb-[140px]'>
 			<h2 className='text-4xl font-bold mb-6 text-center text-gray-800 dark:text-white'>
 				Portfolio
 			</h2>
@@ -56,7 +56,7 @@ function Portfolio() {
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className='bg-white/30 dark:bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col'
+						className='bg-white/30 dark:bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden shadow-md transition-all duration-500 hover:shadow-[0_0_20px_2px_#34d399] flex flex-col'
 					>
 						<div className='w-full h-48 overflow-hidden'>
 							<img
@@ -90,14 +90,6 @@ function Portfolio() {
 						</div>
 					</div>
 				))}
-			</div>
-			<div className='flex justify-center mt-8'>
-				<a
-					href='/learn-more'
-					className='inline-block bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white px-8 py-4 rounded-full text-xl font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300'
-				>
-					Learn More
-				</a>
 			</div>
 		</section>
 	)
