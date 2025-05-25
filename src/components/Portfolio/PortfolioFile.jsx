@@ -14,21 +14,21 @@ const projects = [
 		description:
 			'Bolalar klinikasi uchun landing sahifa. Light/Dark rejim, responsive dizayn.',
 		link: 'https://eco-bozor-web.vercel.app',
-		image: 'eco-bozor.png',
+		image: 'ecobozor.png',
 	},
 	{
 		title: 'Green Shop',
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
 		link: 'https://7-oy-imthon.vercel.app/',
-		image: 'public/green-shop.png',
+		image: 'public/greenshop.png',
 	},
 	{
 		title: 'Books magazin',
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
 		link: 'https://books-magazin.vercel.app/',
-		image: 'book-shop.png',
+		image: 'bookshop.png',
 	},
 	{
 		title: 'To Do List',
