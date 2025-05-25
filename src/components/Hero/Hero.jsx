@@ -12,12 +12,12 @@ function Hero() {
 				<img
 					src='/Me.jpg'
 					alt='My Photo'
-					className='rounded-full w-40 h-40 object-cover border-4 border-cyan-400 shadow-lg mb-6'
+					className='rounded-full w-40 h-40 object-cover border-4 border-[#34d399] shadow-lg mb-6'
 				/>
 
 				<h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight'>
 					Hi, I am <br />
-					<span className='text-cyan-400'>
+					<span className='text-[#34d399]'>
 						<Typewriter
 							words={['Odilov Aslanbek']}
 							loop={1}
@@ -42,13 +42,13 @@ function Hero() {
 					/>
 				</p>
 
-					<a
-						href='/Resume.pdf'
-						download
-						className='inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 cursor-pointer'
-					>
-						Download CV
-					</a>
+				<a
+					href='/Resume.pdf'
+					download
+					className='inline-block px-6 py-3 bg-[#34d399] text-white font-semibold rounded-lg shadow-md hover:bg-[#2bb78f] transition-colors duration-300 cursor-pointer'
+				>
+					Download CV
+				</a>
 			</div>
 		</section>
 	)

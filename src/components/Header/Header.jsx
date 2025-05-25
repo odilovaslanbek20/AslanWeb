@@ -21,11 +21,11 @@ function Header() {
               <span>About me</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
-            <Link to='#' className='group text-gray-300 font-medium relative'>
+            <Link to='/portfolio' className='group text-gray-300 font-medium relative'>
               <span>Portfolio</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
-            <Link to='#' className='group text-gray-300 font-medium relative'>
+            <Link to='/contact' className='group text-gray-300 font-medium relative'>
               <span>Contact me</span>
               <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
             </Link>
@@ -63,14 +63,14 @@ function Header() {
           About me
         </Link>
         <Link
-          to='#'
+          to='/portfolio'
           onClick={() => setModal(false)}
           className='text-lg font-medium'
         >
           Portfolio
         </Link>
         <Link
-          to='#'
+          to='/contact'
           onClick={() => setModal(false)}
           className='text-lg font-medium'
         >

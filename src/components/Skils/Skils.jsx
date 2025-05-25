@@ -1,3 +1,6 @@
+import { IoLogoVercel } from "react-icons/io5";
+import { SiShadcnui } from "react-icons/si";
+
 function Skills() {
 	const skills = [
 		{ id: 1, name: 'HTML', image: 'html.png', category: 'language' },
@@ -9,28 +12,28 @@ function Skills() {
 		{ id: 7, name: 'Bootstrap', image: 'bootstrap.png', category: 'library' },
 		{ id: 8, name: 'React JS', image: 'React.webp', category: 'library' },
 		{ id: 9, name: 'Next JS', image: 'next.png', category: 'library' },
-		{ id: 10, name: 'Redux', image: 'Redux.png', category: 'library' },
+		{ id: 10, name: 'Redux', image: 'redux.png', category: 'library' },
 		{ id: 11, name: 'Zustand', image: 'zustand.png', category: 'library' },
-		{ id: 12, name: 'Ant Design', image: 'antdesign.png', category: 'library' },
-		{ id: 13, name: 'Magic UI', image: 'magicui.png', category: 'library' },
+		{ id: 12, name: 'Ant Design', image: 'antdesingimg.png', category: 'library' },
+		{ id: 13, name: 'Magic UI', image: 'megicui.png', category: 'library' },
 		{ id: 14, name: 'Material UI', image: 'materialui.png', category: 'library' },
-		{ id: 15, name: 'Shadcn/UI', image: 'shadcn.png', category: 'library' },
-		{ id: 16, name: 'i18next', image: 'i18next.png', category: 'library' },
+		{ id: 15, name: 'Shadcn/UI', image: <SiShadcnui className='text-white text-[60px]'/>, category: 'library' },
+		{ id: 16, name: 'i18next', image: 'i18n.png', category: 'library' },
 		{ id: 17, name: 'Git', image: 'git.png', category: 'tool' },
 		{ id: 18, name: 'GitHub', image: 'github.png', category: 'tool' },
 		{ id: 19, name: 'VS Code', image: 'vscode.png', category: 'tool' },
-		{ id: 20, name: 'Figma', image: 'figma.png', category: 'tool' },
-		{ id: 21, name: 'Vercel', image: 'vercel.png', category: 'tool' },
+		{ id: 20, name: 'Figma', image: 'figmaimg.png', category: 'tool' },
+		{ id: 21, name: 'Vercel', image: <IoLogoVercel className='text-white text-[64px]' />, category: 'tool' },
 		{ id: 22, name: 'Netlify', image: 'netlify.png', category: 'tool' },
-		{ id: 23, name: 'Postman', image: 'postman.png', category: 'tool' },
-		{ id: 24, name: 'Prettier', image: 'prettier.png', category: 'tool' },
-	]
+		{ id: 23, name: 'Postman', image: 'postmanimg.png', category: 'tool' },
+		{ id: 24, name: 'Prettier', image: 'pretter.png', category: 'tool' },
+	];
 
 	const categories = {
 		language: 'Programming Languages',
 		library: 'Libraries & Frameworks',
 		tool: 'Tools & Software',
-	}
+	};
 
 	return (
 		<section className='max-w-[1100px] mx-auto py-16 max-[768px]:pb-[90px] px-4 max-[500px]:px-0'>
@@ -47,13 +50,19 @@ function Skills() {
 							.map(skill => (
 								<div
 									key={skill.id}
-									className='bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border rounded-xl p-4 hover:shadow-lg  border-pink-500 shadow-[0_0_20px_2px_rgba(236,72,153,0.5)] transition duration-300 flex flex-col items-center'
+									className='bg-white/20 dark:bg-gray-800/30 backdrop-blur-md border border-white/20 hover:shadow-[0_0_20px_2px_#34d399] rounded-xl p-4 transition duration-300 flex flex-col items-center'
 								>
-									<img
-										src={skill.image}
-										alt={skill.name}
-										className='w-16 h-16 object-contain mb-4'
-									/>
+									{typeof skill.image === 'string' ? (
+										<img
+											src={skill.image}
+											alt={skill.name}
+											className='w-16 h-16 object-contain mb-4'
+										/>
+									) : (
+										<div className='w-16 h-16 mb-4 flex items-center justify-center'>
+											{skill.image}
+										</div>
+									)}
 									<h4 className='text-white text-lg font-medium'>{skill.name}</h4>
 								</div>
 							))}
@@ -61,7 +70,7 @@ function Skills() {
 				</div>
 			))}
 		</section>
-	)
+	);
 }
 
-export default Skills
+export default Skills;
