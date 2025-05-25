@@ -12,7 +12,7 @@ function Skills() {
 		{ id: 7, name: 'Bootstrap', image: 'bootstrap.png', category: 'library' },
 		{ id: 8, name: 'React JS', image: 'React.webp', category: 'library' },
 		{ id: 9, name: 'Next JS', image: 'next.png', category: 'library' },
-		{ id: 10, name: 'Redux', image: 'redux.png', category: 'library' },
+		{ id: 10, name: 'Redux', image: '/redux.png', category: 'library' },
 		{ id: 11, name: 'Zustand', image: 'zustand.png', category: 'library' },
 		{ id: 12, name: 'Ant Design', image: 'antdesingimg.png', category: 'library' },
 		{ id: 13, name: 'Magic UI', image: 'megicui.png', category: 'library' },
