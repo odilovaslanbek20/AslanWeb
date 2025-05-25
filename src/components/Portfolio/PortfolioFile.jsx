@@ -21,7 +21,7 @@ const projects = [
 		description:
 			'Yengil va yuk mashinalar uchun kompaniya sayti. Vizitka dizayni asosida.',
 		link: 'https://7-oy-imthon.vercel.app/',
-		image: 'public/greenshop.png',
+		image: 'greenshop.png',
 	},
 	{
 		title: 'Books magazin',
