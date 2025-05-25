@@ -17,17 +17,17 @@ function Header() {
           </Link>
 
           <nav className='hidden md:flex gap-10'>
-            <Link to='/about' className='group text-gray-300 font-medium relative'>
+            <Link tabIndex={0}  to='/about' className='group text-gray-300 font-medium relative'>
               <span>About me</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
+              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full  transition-all'></span>
             </Link>
-            <Link to='/portfolio' className='group text-gray-300 font-medium relative'>
+            <Link tabIndex={0}  to='/portfolio' className='group text-gray-300 font-medium relative'>
               <span>Portfolio</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
+              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full  transition-all'></span>
             </Link>
-            <Link to='/contact' className='group text-gray-300 font-medium relative'>
+            <Link tabIndex={0} to='/contact' className='group text-gray-300 font-medium relative'>
               <span>Contact me</span>
-              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full transition-all'></span>
+              <span className='absolute left-0 bottom-[-2px] w-0 h-[2px] bg-white group-hover:w-full group-focus:w-full transition-all'></span>
             </Link>
           </nav>
 
